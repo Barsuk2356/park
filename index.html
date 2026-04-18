@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Парк «Лето» — Ночная иллюминация</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -162,6 +162,8 @@
             font-size: 0.9rem;
             transition: all 0.3s;
             cursor: pointer;
+            display: inline-block;
+            text-align: center;
         }
 
         .btn:hover {
@@ -233,7 +235,6 @@
             animation: fadeInUp 0.8s ease 0.4s backwards;
         }
 
-        /* Описание на обложке */
         .hero-description {
             color: #aaa;
             font-size: 1.1rem;
@@ -269,10 +270,6 @@
             background: rgba(255, 215, 0, 0.2);
             border-color: #FFD700;
             transform: translateY(-2px);
-        }
-
-        .tag i {
-            font-size: 0.8rem;
         }
 
         .hero-cta {
@@ -617,6 +614,7 @@
             font-size: 1.5rem;
             background: none;
             border: none;
+            transition: color 0.3s;
         }
 
         .close:hover {
@@ -630,6 +628,7 @@
             .garland { height: 30px; }
             .bulb { width: 10px; height: 10px; }
             .hero-description { font-size: 1rem; }
+            section { padding: 3rem 1.5rem; }
         }
     </style>
 </head>
@@ -706,23 +705,17 @@
         <h2>Почему мы?</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-ticket"></i>
-                </div>
+                <div class="card-icon"><i class="fas fa-ticket"></i></div>
                 <h3>15 аттракционов</h3>
                 <p>От детской площадки до экстремальных горок. Всё в свете золотых фонарей.</p>
             </div>
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-users"></i>
-                </div>
+                <div class="card-icon"><i class="fas fa-users"></i></div>
                 <h3>Семейный отдых</h3>
                 <p>Специальные наборы для семей. Светящиеся браслеты каждому.</p>
             </div>
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-ice-cream"></i>
-                </div>
+                <div class="card-icon"><i class="fas fa-ice-cream"></i></div>
                 <h3>Ночное кафе</h3>
                 <p>Горячий шоколад, кукуруза, сладкая вата. Работает до закрытия.</p>
             </div>
@@ -733,9 +726,7 @@
         <h2>Аттракционы</h2>
         <div class="grid">
             <div class="attr-card">
-                <div class="attr-img">
-                    <img src="https://e.radikal.host/2026/04/18/NINTCHDBPICT00051550.jpg" alt="Горки">
-                </div>
+                <div class="attr-img"><img src="https://e.radikal.host/2026/04/18/NINTCHDBPICT00051550.jpg" alt="Американские горки ночью"></div>
                 <div class="attr-content">
                     <h3>Американские горки</h3>
                     <div class="price">300 <span>₽</span></div>
@@ -743,9 +734,7 @@
                 </div>
             </div>
             <div class="attr-card">
-                <div class="attr-img">
-                    <img src="https://e.radikal.host/2026/04/18/32148_608x608.jpg" alt="Колесо">
-                </div>
+                <div class="attr-img"><img src="https://e.radikal.host/2026/04/18/32148_608x608.jpg" alt="Колесо обозрения ночью"></div>
                 <div class="attr-content">
                     <h3>Колесо обозрения</h3>
                     <div class="price">250 <span>₽</span></div>
@@ -753,9 +742,7 @@
                 </div>
             </div>
             <div class="attr-card">
-                <div class="attr-img">
-                    <img src="https://e.radikal.host/2026/04/18/children-s-carousel-amusement-park-night-illumination-amusement-park-night_345343-4244.jpg" alt="Карусель">
-                </div>
+                <div class="attr-img"><img src="https://e.radikal.host/2026/04/18/children-s-carousel-amusement-park-night-illumination-amusement-park-night_345343-4244.jpg" alt="Карусель"></div>
                 <div class="attr-content">
                     <h3>Карусель</h3>
                     <div class="price">200 <span>₽</span></div>
@@ -763,9 +750,7 @@
                 </div>
             </div>
             <div class="attr-card">
-                <div class="attr-img">
-                    <img src="https://e.radikal.host/2026/04/18/csm_Water_Slides_Header1_e3b3f18258.jpg" alt="Водные">
-                </div>
+                <div class="attr-img"><img src="https://e.radikal.host/2026/04/18/csm_Water_Slides_Header1_e3b3f18258.jpg" alt="Водные горки"></div>
                 <div class="attr-content">
                     <h3>Водные горки</h3>
                     <div class="price">350 <span>₽</span></div>
@@ -778,15 +763,9 @@
     <section id="gallery">
         <h2>Галерея</h2>
         <div class="grid">
-            <div class="gallery-item">
-                <img src="https://e.radikal.host/2026/04/17/755501385828756.jpg" alt="1">
-            </div>
-            <div class="gallery-item">
-                <img src="https://e.radikal.host/2026/04/17/park.jpg" alt="2">
-            </div>
-            <div class="gallery-item">
-                <img src="https://e.radikal.host/2026/04/17/Skoda20Ice20Truck201.jpg" alt="3">
-            </div>
+            <div class="gallery-item"><img src="https://e.radikal.host/2026/04/17/755501385828756.jpg" alt="Парк ночью"></div>
+            <div class="gallery-item"><img src="https://e.radikal.host/2026/04/17/park.jpg" alt="Аттракционы"></div>
+            <div class="gallery-item"><img src="https://e.radikal.host/2026/04/17/Skoda20Ice20Truck201.jpg" alt="Каток"></div>
         </div>
     </section>
 
@@ -796,32 +775,19 @@
             <div class="ticket">
                 <h3>Детский</h3>
                 <div class="big-price">500₽</div>
-                <ul class="features">
-                    <li>Детские аттракционы</li>
-                    <li>Светящийся браслет</li>
-                    <li>Страховка</li>
-                </ul>
+                <ul class="features"><li>Детские аттракционы</li><li>Светящийся браслет</li><li>Страховка</li></ul>
                 <button class="btn" onclick="openModal()" style="width: 100%;">Купить</button>
             </div>
             <div class="ticket featured">
                 <h3>Семейный</h3>
                 <div class="big-price">2000₽</div>
-                <ul class="features">
-                    <li>Все аттракционы</li>
-                    <li>4 человека</li>
-                    <li>Фотосессия</li>
-                    <li>Приоритетная очередь</li>
-                </ul>
+                <ul class="features"><li>Все аттракционы</li><li>4 человека</li><li>Фотосессия</li><li>Приоритетная очередь</li></ul>
                 <button class="btn btn-filled" onclick="openModal()" style="width: 100%;">Купить</button>
             </div>
             <div class="ticket">
                 <h3>Взрослый</h3>
                 <div class="big-price">800₽</div>
-                <ul class="features">
-                    <li>Экстрим</li>
-                    <li>Светящийся браслет</li>
-                    <li>Скидка в кафе</li>
-                </ul>
+                <ul class="features"><li>Экстрим</li><li>Светящийся браслет</li><li>Скидка в кафе</li></ul>
                 <button class="btn" onclick="openModal()" style="width: 100%;">Купить</button>
             </div>
         </div>
@@ -830,18 +796,9 @@
     <section>
         <h2>Отзывы</h2>
         <div class="grid">
-            <div class="review">
-                <div class="review-text">Волшебно. Жёлтые огни всюду, как в сказке. Дети были в восторге от колеса обозрения ночью.</div>
-                <div class="review-author">— Анна С.</div>
-            </div>
-            <div class="review">
-                <div class="review-text">Атмосфера ночного парка непередаваема. Горки с подсветкой — это что-то новое.</div>
-                <div class="review-author">— Максим К.</div>
-            </div>
-            <div class="review">
-                <div class="review-text">Семейный билет выгодный. Светящиеся палочки дети ещё дома разглядывали.</div>
-                <div class="review-author">— Семья Петровых</div>
-            </div>
+            <div class="review"><div class="review-text">Волшебно. Жёлтые огни всюду, как в сказке. Дети были в восторге от колеса обозрения ночью.</div><div class="review-author">— Анна С.</div></div>
+            <div class="review"><div class="review-text">Атмосфера ночного парка непередаваема. Горки с подсветкой — это что-то новое.</div><div class="review-author">— Максим К.</div></div>
+            <div class="review"><div class="review-text">Семейный билет выгодный. Светящиеся палочки дети ещё дома разглядывали.</div><div class="review-author">— Семья Петровых</div></div>
         </div>
     </section>
 
@@ -855,9 +812,9 @@
         <p style="margin-top: 1rem; opacity: 0.5;">© 2024 Парк «Лето»</p>
     </footer>
 
-    <div class="modal" id="modal" onclick="closeModal(event)">
+    <div class="modal" id="modal">
         <div class="modal-content">
-            <button class="close" onclick="closeModal(event)">×</button>
+            <button class="close" onclick="closeModal()">×</button>
             <h3>Звоните</h3>
             <div class="phone">+7 (999) 123-45-67</div>
             <p style="color: #666; margin-bottom: 2rem;">Ежедневно 10:00—22:00</p>
@@ -866,36 +823,35 @@
     </div>
 
     <script>
-        // Создаём падающие огоньки на фоне
         const container = document.getElementById('lights');
-        const lightCount = 50;
-        
-        for (let i = 0; i < lightCount; i++) {
+        for (let i = 0; i < 50; i++) {
             const light = document.createElement('div');
             light.className = 'light';
             light.style.left = Math.random() * 100 + '%';
             light.style.animationDuration = (Math.random() * 3 + 2) + 's';
             light.style.animationDelay = Math.random() * 5 + 's';
             light.style.opacity = Math.random() * 0.5 + 0.5;
-            
             const size = Math.random() * 2 + 2;
             light.style.width = size + 'px';
             light.style.height = size + 'px';
-            
             container.appendChild(light);
         }
 
-        // Модальное окно
         function openModal() {
             document.getElementById('modal').classList.add('active');
         }
 
-        function closeModal(e) {
-            if (e.target === document.getElementById('modal') || e.target.tagName === 'BUTTON') {
-                document.getElementById('modal').classList.remove('active');
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+        
+        // Закрытие модалки по клику на фон
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.classList.remove('active');
             }
         }
     </script>
-
 </body>
 </html>
